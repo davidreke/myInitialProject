@@ -1,0 +1,105 @@
+/* testing CSS notes */
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
+/* what we're selecting */
+h1 { 
+    font-weight: 200;
+    font-size: 70px;
+    text-transform: uppercase;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    margin: 10px;
+/* how we're styling */
+}
+body {
+    background-color: #D8B79A;
+    color: #261A13;
+    font-family: "Source Code Pro";
+    font-weight: 200;
+}
+img{
+    height: 300px;
+    border-radius: 50%
+
+}
+/* center body */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+}
+
+/* set up button sytle */
+button{
+    margin: 30px auto 0;
+    padding: 20ox 25px;
+    background-color: #D8B79A;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid;
+    color: #261A13;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    outline: none;
+}
+/* give button hover animation */
+button:hover{
+    transition: .3s;
+    background-color: #261A13;
+    color:#D8B79A;
+    text-decoration: underline;
+}
+
+
+
+p{
+    font-size: 20px;
+/* pasted and copied from W3 schools to add in hover->Meow functionality */
+}
+.box {
+    transition: 0s;
+    position: relative;
+    width: 40%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+     
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s;
+    transition-delay 10s; 
+    background-color: #D8B79A;
+    
+  }
+  
+  .box:hover .overlay { 
+    transition-delay 10s;
+    opacity: 1;
+    
+  }
+  
+  .text {
+    color: #261A13;
+    font-size: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
